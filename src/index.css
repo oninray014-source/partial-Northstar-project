@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@layer base {
+  :root {
+    --brand-forest: #063B35;
+    --brand-forest-dark: #042925;
+    --brand-emerald: #00B86B;
+    --brand-emerald-bright: #00C875;
+    --brand-text: #102A2A;
+    --brand-gray: #617070;
+    --brand-bg: #F3F7F5;
+    --brand-surface: #FFFFFF;
+    --brand-border: #E1EBE7;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--brand-text);
+    background-color: var(--brand-bg);
+  }
+
+  h1, h2, h3, .font-heading {
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Smooth scrolling and transitions */
+html:not(.lenis) {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  scroll-behavior: auto !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F7F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D6CF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #063B35;
+}

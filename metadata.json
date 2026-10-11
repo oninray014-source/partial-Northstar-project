@@ -1,0 +1,6 @@
+{
+  "name": "Northstar Facility Services",
+  "description": "Commercial property maintenance and facility services partner for Austin and Central Texas. One partner for everything your property needs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
